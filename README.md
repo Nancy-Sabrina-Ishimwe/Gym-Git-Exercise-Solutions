@@ -139,8 +139,6 @@ PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions>
 
 #Bundle2 
 ## Exercise 1
-...bash
-
 PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git status
 On branch dev
 Untracked files:
@@ -271,57 +269,3 @@ remote:
 To https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
-
-...
-
-##Exercise 2
-...bash
-
-PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git checkout main
-Switched to branch 'main'
-Your branch is up to date with 'origin/main'.
-No stash entries found.
-PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git status
-Your branch is up to date with 'origin/main'.
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        modified:   README.md
-        modified:   services.html
-
-PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git add .
-[main 9361ba6] Serices updated
- 2 files changed, 142 insertions(+), 2 deletions(-)
-Enumerating objects: 7, done.
-Counting objects: 100% (7/7), done.
-Delta compression using up to 4 threads
-Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
-   a762998..9361ba6  main -> main
-PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git checkout ft/service-redesign
-Switched to branch 'ft/service-redesign'
-Your branch is up to date with 'origin/ft/service-redesign'.
-PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git merge main
-Auto-merging services.html
-CONFLICT (content): Merge conflict in services.html
-Automatic merge failed; fix conflicts and then commit the result.
-PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git add .
-PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git commit -m"Conflict resolved"
-[ft/service-redesign 211eb84] Conflict resolved
-PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push
-Enumerating objects: 4, done.
-Counting objects: 100% (4/4), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (2/2), 292 bytes | 97.00 KiB/s, done.
-Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions.git
-   036d55d..211eb84  ft/service-redesign -> ft/service-redesign
-PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> 
-
-...
-
-#Bundle 3
-#Exercise 1
-...bash
-
