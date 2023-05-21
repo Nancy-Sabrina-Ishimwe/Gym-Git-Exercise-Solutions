@@ -269,3 +269,106 @@ remote:
 To https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+
+### Bundle 3
+##Exercise 2
+...bash
+
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git checkout -b ft/home-page-redesign
+fatal: a branch named 'ft/home-page-redesign' already exists
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git checkout ft/home-page-redesign   
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git rebase main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+error: could not apply 036d55d...  Service.html modified
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 036d55d... Service.html modified
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git rebase main
+fatal: It seems that there is already a rebase-merge directory, and 
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+        git rebase (--continue | --abort | --skip)
+If that is not the case, please
+        rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something   
+valuable there.
+
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git log
+Author: Nancy-Sabrina-Ishimwe <ishimwenancysabrina1@gmail.com>
+Date:   Sun May 21 12:28:07 2023 +0200
+
+    changes made on main
+
+Date:   Fri May 19 06:41:32 2023 +0200
+
+    Serices updated
+
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git ad home.html
+The most similar commands are
+        add
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git add home.html
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git commit -m"change made on home"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git add .
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git commit -m"change made on home"
+[detached HEAD d02265d] change made on home
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+any of your branches:
+
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> d02265d
+
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git add .
+[ft/home-page-redesign 6c096e9] change made on home
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 532 bytes | 266.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> 
+
+...
+
+## Bundle 4
+# Exercise 1
+... bash 
+
