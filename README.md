@@ -459,3 +459,6 @@ remote:
 To https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/squashing -> ft/squashing
 PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> 
+
+...
+
