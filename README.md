@@ -270,3 +270,195 @@ To https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 
+...
+## Bundle 4
+## Exercise 1
+
+...bash
+
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git checkout main    
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git remote add git-copy https://github.com/Nancy-Sabrina-Ishimwe/git-bundle-exercises.git
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git remote
+Nancy-Sabrina-Ishimwe
+git-copy
+origin
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Last command done (1 command done):
+   pick 036d55d Service.html modified
+Next commands to do (6 remaining commands):
+   pick 446f680 Team page
+You are currently editing a commit while rebasing branch 'ft/home-page-redesign' on '5b77c90'.
+  (use "git commit --amend" to amend the current commit)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git add home.html
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git commit -m"new changses at home.html"
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push origin
+Counting objects: 100% (10/10), done.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 809 bytes | 404.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions.git
+   9361ba6..b746bbc  main -> main
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push origin git-copy
+error: src refspec git-copy does not match any
+error: failed to push some refs to 'https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions.git'
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push
+Everything up-to-date
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push git-copy
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (23/23), 4.57 KiB | 425.00 KiB/s, done.
+Total 23 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), done.
+To https://github.com/Nancy-Sabrina-Ishimwe/git-bundle-exercises.git
+ * [new branch]      main -> main
+
+ ...
+
+ # Exercise 2
+
+ ...bash
+ * [new branch]      main -> main
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git add footer.html
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git commit -m "second commit"
+[ft/footer 61fe71f] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 footer.html
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git status
+On branch ft/footer
+Last command done (1 command done):
+   pick 036d55d Service.html modified
+Next commands to do (6 remaining commands):
+   pick 446f680 Team page
+   pick c6dc7d3 Team page
+You are currently editing a commit while rebasing branch 'ft/home-page-redesign' on '5b77c90'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   footer.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push origin ft/footer
+Enumerating objects: 4, done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 141.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+Please commit your changes or stash them before you switch branches.
+Aborting
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git add .
+[ft/footer 353934b] second commit
+ 2 files changed, 85 insertions(+), 1 deletion(-)
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push --set-upstream origin ft/footer
+Enumerating objects: 7, done.
+Delta compression using up to 4 threads
+Writing objects: 100% (4/4), 1.52 KiB | 312.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions.git
+   61fe71f..353934b  ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git checkout main
+Your branch is up to date with 'origin/main'.
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git merge --squash ft/footer
+Updating b746bbc..353934b
+Fast-forward
+Squash commit -- not updating HEAD
+ README.md   | 66 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ footer.html | 19 ++++++++++++++++++
+ 2 files changed, 85 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git log
+Author: Nancy-Sabrina-Ishimwe <ishimwenancysabrina1@gmail.com>
+Date:   Sun May 21 21:24:35 2023 +0200
+
+
+commit 5b77c902a23e13811bcfdfc3fea422bca804efab
+Author: Nancy-Sabrina-Ishimwe <ishimwenancysabrina1@gmail.com>
+
+    changes made on main
+
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git commit -m"footer change"
+[ft/squashing 9f22832] footer change
+ 2 files changed, 85 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git checkout ft/footer      
+Switched to branch 'ft/footer'
+M       footer.html
+Your branch is up to date with 'origin/ft/footer'.
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git log
+Author: Nancy-Sabrina-Ishimwe <ishimwenancysabrina1@gmail.com>
+Date:   Sun May 21 22:14:14 2023 +0200
+    second commit
+
+commit 61fe71f81f273ccb5ed355e8b3cab2d5d0f0df9c
+Author: Nancy-Sabrina-Ishimwe <ishimwenancysabrina1@gmail.com>
+Date:   Sun May 21 22:11:59 2023 +0200
+
+    second commit
+
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git checkout ft/squashing
+Switched to branch 'ft/squashing'
+M       footer.html
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> git push origin ft/squashing
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.53 KiB | 521.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/Nancy-Sabrina-Ishimwe/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+PS C:\Users\Name of Jesus\Desktop\Gym Git Exercise Solutions> 
+
+...
+
